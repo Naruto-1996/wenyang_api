@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://gems.ruby-china.com'
 ruby '2.6.1'
 
 gem 'mysql2', '0.5.2'
