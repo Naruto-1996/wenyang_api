@@ -1,0 +1,22 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  collation: utf8_general_ci
+  pool: 5
+  host: localhost
+  username: root
+  password: 666666
+
+development:
+  <<: *default
+  database: cadae
+
+test:
+  <<: *default
+  database: cadae_test
+
+production:
+  <<: *default
+  url: 'mysql2://root:666666@localhost:3306/cadae?pool=10&timeout=3000'
+  pool: 10
+  database: cadae

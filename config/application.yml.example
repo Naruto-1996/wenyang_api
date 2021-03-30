@@ -1,0 +1,12 @@
+defaults: &defaults
+  COMMUNICATOR_REDIS_URL: 'redis://localhost:6379/3'
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
